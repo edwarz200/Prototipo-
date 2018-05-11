@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #333;
+}
+a{
+    text-decoration: none;
+}
+.containermenu{
+    position: relative;
+    height: 90px;
+    background-color: #2a2a2a;
+}
+.menu{
+    position: absolute;
+    left: 360px;
+}
+
+.containermenu section article:first-child,.containermenu section article:nth-child(3),
+.menu ul li{
+    position: relative;
+    float: left;
+}
+.containermenu ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+.containermenu ul li{
+    display: inline-block;
+}
+.containermenu ul li a{
+    position: relative;
+    padding: 17px;
+    color: white;
+    font-size: 12px;
+    font-family: Lucida sans;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.containermenu ul li section,.containermenu ul li a{
+    width: 106px;
+    height: 48px;
+}
+
+/* menu */
+.cpindex nav {
+    position: absolute;
+    height: 546px;
+    width: 200px;
+    color:#fff;
+    background-color: #333;
+    outline: solid 1px #2a2a2a;
+}
+.cpindex nav h2{
+    padding: 20px;
+    background: #2a2a2a;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+.cpindex nav li {
+    background: #333;
+    outline: solid 1px #2a2a2a;
+    transition-property: border-left;
+    transition-duration: 0.3s;
+}
+.cpindex nav li:hover{
+    background-color: #2a2a2a;
+    border-left: 5px solid #eee;
+}
+.cpindex nav a{
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* Contenido pagina */
+#section2{
+    position: relative;
+    top: 3px;
+    left: 203px;
+    height: 200px;
+    width: 1162px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+#section2 article section{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, .3);
+    transition: background-color .5s;
+}
+#section2:hover article section{
+    background-color: rgba(51, 51, 51, .7);
+}
+#section2 article ul:nth-child(1) li img{
+    position: relative;
+    top: 180px;
+    height: 300px;
+    width: 100%;
+    filter: blur(0px);
+    transition: flur .3s;
+    transform: translateY(-250px);
+    float: left;
+}
+#section2:hover article ul:nth-child(1) li img{
+    filter: blur(1.5px);
+}
+.cpindex nav img{
+    margin-right:40px;
+    width: 30px;
+    height: 30px;
+}
+.cpindex section:nth-child(3){
+    position: relative;
+    top: 6px;
+    left: 201px;
+    height: 341px;
+    width: 1165px;
+    background-color: #333;
+}
+.cpindex section:nth-child(3) p{
+    color: #333;
+    font-size: 20px;
+    font-family: 'Titan One', cursive;
+}
+ #section2 article section ul:nth-child(1){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 130px;
+    height: 29px;
+    background-color: rgb(28, 174, 231,.6);
+    border-top-left-radius: 30px;
+    transition: background-color .3s;
+}
+#section2:hover article section ul:nth-child(1){
+    background-color: rgb(28, 174, 231,1);    
+}
+#section2 article section ul:nth-child(1) a{
+    margin-left: 20px;
+    color: white;
+    font-size: 24px;
+    display: inline-block;
+    text-decoration: none;
+}
+#section2 article section ul:nth-child(2){
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    width: 300px;
+    height: 90px;
+    background-color: rgba(43, 43, 43, 0.7);
+    transition: background-color .35s;
+}
+#section2:hover article section ul:nth-child(2){
+    background-color: rgb(58, 58, 58);
+}
+#section2 article section ul:nth-child(2) h1, #section2 article section ul:nth-child(2) p,
+#section2 article section ul:nth-child(2) a{
+    color: #eee;
+}
+#section2 article section ul:nth-child(2) h1{
+    margin: 20px;
+    border-bottom: solid 1px #333333;
+    transition: border-bottom .35s;
+}
+#section2:hover article section ul:nth-child(2) h1{
+    border-bottom: solid 1px rgb(34, 34, 34);
+}
+#section2 article section ul:nth-child(2) li{
+    position: relative;
+    top: 3px;
+    left: 17px;
+    display: inline-block;
+}
+#section2 article section ul:nth-child(2) li:nth-child(2){
+    margin-right: 20px;
+}
+#section2 article section ul:nth-child(2) li:nth-child(3){
+    margin-right: 20px;
+}
+#section2 article section ul:nth-child(2) li:nth-child(4){
+    margin-left: 70px;
+}
+.cpindex section:nth-child(3) ul{
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    height: 300px;
+    width: 800px;
+}
+.cpindex section:nth-child(3) ul li {
+    position: absolute;
+    top: 20px;     
+    width: 200px;
+    height: 240px;
+    border-radius: 2px;
+    background-color: #319AA9;
+    transition: .5s;
+    border-radius: 4px;
+    display: inline-block;
+}
+.cpindex section:nth-child(3) ul li:nth-child(2){
+    left: 700px;
+}
+.cpindex section:nth-child(3) ul li:nth-child(3){
+    left: 350px;
+}
+.cpindex section:nth-child(3) ul li:hover{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(94, 94, 94,.5);
+}
+.cpindex section:nth-child(3) ul li img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    transition: .5s;
+}
+.cpindex section:nth-child(3) ul li:hover img{
+    width: 150px;
+    height: 150px;
+    opacity: .75;
+}
