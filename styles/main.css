@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Titan+One');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
 
 *{
     margin: 0;
@@ -166,6 +167,7 @@ ul {
     height: 90px;
     background-color: rgba(43, 43, 43, 0.7);
     transition: background-color .35s;
+    cursor: pointer;
 }
 #section2:hover article section ul:nth-child(2){
     background-color: rgb(58, 58, 58);
@@ -188,14 +190,14 @@ ul {
     left: 17px;
     display: inline-block;
 }
-#section2 article section ul:nth-child(2) li:nth-child(2){
+#section2 article section ul:nth-child(2) li:nth-child(2) a{
     margin-right: 20px;
 }
-#section2 article section ul:nth-child(2) li:nth-child(3){
+#section2 article section ul:nth-child(2) li:nth-child(3) a{
     margin-right: 20px;
 }
-#section2 article section ul:nth-child(2) li:nth-child(4){
-    margin-left: 70px;
+#section2 article section ul:nth-child(2) li:nth-child(4) a{
+    margin-left: 40px;
 }
 .cpindex section:nth-child(3) ul{
     position: absolute;
@@ -207,34 +209,103 @@ ul {
 .cpindex section:nth-child(3) ul li {
     position: absolute;
     top: 20px;     
+    width: 300px;
+    height: 260px;
+    overflow: hidden;
+}
+.cpindex section:nth-child(3) ul li .a{
     width: 200px;
-    height: 240px;
+    height: 260px;
     border-radius: 2px;
     background-color: #319AA9;
     transition: .5s;
     border-radius: 4px;
     display: inline-block;
 }
-.cpindex section:nth-child(3) ul li:nth-child(2){
+.cpindex section:nth-child(3) ul li:nth-child(2) {
     left: 700px;
 }
-.cpindex section:nth-child(3) ul li:nth-child(3){
+.cpindex section:nth-child(3) ul li:nth-child(3) {
     left: 350px;
 }
-.cpindex section:nth-child(3) ul li:hover{
+.cpindex section:nth-child(3) ul li:hover .a{
     width: 300px;
     height: 200px;
     background-color: rgba(94, 94, 94,.5);
 }
-.cpindex section:nth-child(3) ul li img{
+.cpindex section:nth-child(3) ul li a img{
     position: absolute;
     width: 200px;
     height: 200px;
     border-radius: 4px;
     transition: .5s;
 }
-.cpindex section:nth-child(3) ul li:hover img{
+.cpindex section:nth-child(3) ul li:hover a img{
     width: 150px;
     height: 150px;
     opacity: .75;
+}
+.cpindex section:nth-child(3) ul li a h1{
+    position: relative;
+    top: 200px;
+    left: 0;
+    margin: 10px;
+    width: 170px;
+    font-size: 14px;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #cfd0d6;
+    border-bottom: solid 1.3px #1e6de4;
+    transition-property: top, left;
+    transition-duration: 0s, .5s;
+    animation: animacion2 .3s 1 linear 0s normal;
+}
+.cpindex section:nth-child(3) ul li:hover a h1{
+    top: 10px;
+    left: 150px;
+    width: 130px;
+    animation-name: animacion;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-direction: normal;
+}
+.cpindex section:nth-child(3) ul li:nth-child(1):hover a h1{
+    font-size: 12px;
+}
+.cpindex section:nth-child(3) ul li:nth-child(1) a p:nth-child(5){
+    color: rgba(255, 255, 255, 0);
+    transform: translate(200px,200px);   
+}
+.cpindex section:nth-child(3) ul li:nth-child(1):hover a p:nth-child(5){
+    color: #fff;
+    animation-name: animacion;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-direction: normal;
+}
+
+
+
+
+
+
+
+ @keyframes animacion{
+     0%{
+         visibility: hidden;
+     }
+     100%{
+        visibility: hidden;
+    }
+ }
+ @keyframes animacion2{
+    100%{
+        visibility: hidden;
+    }
+    0%{
+       visibility: hidden;
+   }
 }
