@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 .containermenu{
-    position: relative;
+    position: fixed;
     height: 90px;
     background-color: #2a2a2a;
 }
@@ -55,7 +55,7 @@ a{
 
 /* menu */
 .cpindex nav {
-    position: absolute;
+    position: fixed;
     height: 546px;
     width: 200px;
     color:#fff;
@@ -92,7 +92,7 @@ ul {
     position: relative;
     top: 3px;
     left: 203px;
-    height: 200px;
+    height: 250px;
     width: 1162px;
     border-bottom-right-radius: 20px;
     overflow: hidden;
@@ -100,19 +100,20 @@ ul {
 #section2 article section{
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 98.59%;
     height: 100%;
     background-color: rgba(51, 51, 51, .3);
     transition: background-color .5s;
+    overflow: hidden;
 }
 #section2:hover article section{
     background-color: rgba(51, 51, 51, .7);
 }
 #section2 article ul:nth-child(1) li img{
     position: relative;
-    top: 180px;
+    top: 210px;
     height: 300px;
-    width: 100%;
+    width: 98.59%;
     filter: blur(0px);
     transition: flur .3s;
     transform: translateY(-250px);
@@ -120,24 +121,6 @@ ul {
 }
 #section2:hover article ul:nth-child(1) li img{
     filter: blur(1.5px);
-}
-.cpindex nav img{
-    margin-right:40px;
-    width: 30px;
-    height: 30px;
-}
-.cpindex section:nth-child(3){
-    position: relative;
-    top: 6px;
-    left: 201px;
-    height: 341px;
-    width: 1165px;
-    background-color: #333;
-}
-.cpindex section:nth-child(3) p{
-    color: #333;
-    font-size: 20px;
-    font-family: 'Titan One', cursive;
 }
  #section2 article section ul:nth-child(1){
     position: absolute;
@@ -199,21 +182,49 @@ ul {
 #section2 article section ul:nth-child(2) li:nth-child(4) a{
     margin-left: 40px;
 }
-.cpindex section:nth-child(3) ul{
+.cpindex nav img{
+    margin-right:40px;
+    width: 30px;
+    height: 30px;
+}
+.cpindex .s3{
+    position: relative;
+    top: 6px;
+    left: 201px;
+    height: 291px;
+    width: 1140px;
+    background-color: #333;
+}
+.cpindex .s3 #su{
+    color: #319AA9;
+    margin-left: 20px;
+    font-size: 17px;
+    font-family: 'Titan One', cursive;
+}
+.cpindex .s3 ul{
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 130px;
-    height: 300px;
+    height: 200px;
     width: 800px;
 }
-.cpindex section:nth-child(3) ul li {
+.cpindex .s3 ul li {
     position: absolute;
     top: 20px;     
-    width: 300px;
+    width: 200px;
     height: 260px;
     overflow: hidden;
 }
-.cpindex section:nth-child(3) ul li .a{
+.cpindex .s3 ul li:hover{
+    width: 300px;
+}
+.cpindex .s3 ul li:nth-child(2) {
+    left: 700px;
+}
+.cpindex .s3 ul li:nth-child(3) {
+    left: 350px;
+}
+.cpindex .s3 ul li .a{
     width: 200px;
     height: 260px;
     border-radius: 2px;
@@ -222,30 +233,24 @@ ul {
     border-radius: 4px;
     display: inline-block;
 }
-.cpindex section:nth-child(3) ul li:nth-child(2) {
-    left: 700px;
-}
-.cpindex section:nth-child(3) ul li:nth-child(3) {
-    left: 350px;
-}
-.cpindex section:nth-child(3) ul li:hover .a{
+.cpindex .s3 ul li:hover .a{
     width: 300px;
     height: 200px;
     background-color: rgba(94, 94, 94,.5);
 }
-.cpindex section:nth-child(3) ul li a img{
+.cpindex .s3 ul li a img{
     position: absolute;
     width: 200px;
     height: 200px;
     border-radius: 4px;
     transition: .5s;
 }
-.cpindex section:nth-child(3) ul li:hover a img{
+.cpindex .s3 ul li:hover a img{
     width: 150px;
     height: 150px;
     opacity: .75;
 }
-.cpindex section:nth-child(3) ul li a h1{
+.cpindex .s3 ul li a h1{
     position: relative;
     top: 200px;
     left: 0;
@@ -259,7 +264,7 @@ ul {
     transition-duration: 0s, .5s;
     animation: animacion2 .3s 1 linear 0s normal;
 }
-.cpindex section:nth-child(3) ul li:hover a h1{
+.cpindex .s3 ul li:hover a h1{
     top: 10px;
     left: 150px;
     width: 130px;
@@ -270,25 +275,66 @@ ul {
     animation-delay:0s;
     animation-direction: normal;
 }
-.cpindex section:nth-child(3) ul li:nth-child(1):hover a h1{
+.cpindex .s3 ul li:nth-child(1):hover a h1{
     font-size: 12px;
 }
-.cpindex section:nth-child(3) ul li:nth-child(1) a p:nth-child(5){
-    color: rgba(255, 255, 255, 0);
-    transform: translate(200px,200px);   
+.cpindex .s3 ul li p:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px 85px;
+    font-size: 12px;
+    color: rgba(207, 208, 214, 0);
+    font-family: 'Alegreya Sans', sans-serif;
+    transform: translate(200px,45px);
+    transition-property: color, transform;
+    transition-delay: .1s;
+    transition-duration:.45s,.45s;
+    animation: animacion2 .3s 1 linear 0s normal;
 }
-.cpindex section:nth-child(3) ul li:nth-child(1):hover a p:nth-child(5){
-    color: #fff;
+.cpindex .s3 ul li:hover  p:nth-child(4){
+    transform: translate(80px,45px);
+    color: #cfd0d6;
     animation-name: animacion;
-    animation-duration: .3s;
+    animation-duration: .35s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-delay:0s;
     animation-direction: normal;
 }
+.cpindex .s3 ul li p:nth-child(3){
+    position: absolute;
+    top: 237px;
+    left: 12px;
+    color: #eee;
+    font-size: 14px;
+    animation: animacion .35s 1 linear 0s normal;
+}
+.cpindex .s3 ul li:hover p:nth-child(3){
+    top: 155px;
+    left: 5px;
+    font-size: 10px;
+    animation: animacion2 .32s 1 linear 0s normal;
+}
+/* li button{
+    visibility: hidden;
+    padding: 0px;
 
-
-
+}
+li:hover button{
+     position: absolute;
+     top: 159px;
+     left: 75px;
+     padding: 7px 10px;
+     background-color: rgb(61, 61, 61);
+     color: white;
+     border: none;
+     animation: animacion .35s 1 linear 0s normal;
+     visibility: visible;
+     transition-property: padding;
+     transition-delay: .35s;
+     transition-duration: .1s;
+ } */
 
 
 
