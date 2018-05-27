@@ -56,9 +56,9 @@ a{
 /* menu */
 .cpindex nav {
     position: fixed;
-    height: 546px;
+    height: 637px;
     width: 200px;
-    color:#fff;
+    color: #fff;
     background-color: #333;
     outline: solid 1px #2a2a2a;
 }
@@ -93,14 +93,14 @@ ul {
     top: 3px;
     left: 203px;
     height: 250px;
-    width: 1162px;
+    width: 1145px;
     border-bottom-right-radius: 20px;
     overflow: hidden;
 }
 #section2 article section{
     position: absolute;
     top: 0;
-    width: 98.59%;
+    width: 1145px;
     height: 100%;
     background-color: rgba(51, 51, 51, .3);
     transition: background-color .5s;
@@ -113,7 +113,7 @@ ul {
     position: relative;
     top: 210px;
     height: 300px;
-    width: 98.59%;
+    width: 1145px;
     filter: blur(0px);
     transition: flur .3s;
     transform: translateY(-250px);
@@ -150,7 +150,6 @@ ul {
     height: 90px;
     background-color: rgba(43, 43, 43, 0.7);
     transition: background-color .35s;
-    cursor: pointer;
 }
 #section2:hover article section ul:nth-child(2){
     background-color: rgb(58, 58, 58);
@@ -302,6 +301,19 @@ ul {
     animation-delay:0s;
     animation-direction: normal;
 }
+.cpindex section:nth-child(10) ul li:nth-child(3)  p:nth-child(4){
+    transform: translate(200px,60px);
+}
+.cpindex section:nth-child(10) ul li:nth-child(3):hover  p:nth-child(4){
+    transform: translate(80px,60px);
+}
+ .cpindex section:nth-child(3) ul li:nth-child(1):hover  p:nth-child(4){
+    transform: translate(200px,52px);
+}
+ .cpindex section:nth-child(3) ul li:nth-child(1):hover  p:nth-child(4){
+    transform: translate(80px,52px);
+}
+
 .cpindex .s3 ul li p:nth-child(3){
     position: absolute;
     top: 237px;
@@ -316,25 +328,6 @@ ul {
     font-size: 10px;
     animation: animacion2 .32s 1 linear 0s normal;
 }
-/* li button{
-    visibility: hidden;
-    padding: 0px;
-
-}
-li:hover button{
-     position: absolute;
-     top: 159px;
-     left: 75px;
-     padding: 7px 10px;
-     background-color: rgb(61, 61, 61);
-     color: white;
-     border: none;
-     animation: animacion .35s 1 linear 0s normal;
-     visibility: visible;
-     transition-property: padding;
-     transition-delay: .35s;
-     transition-duration: .1s;
- } */
 
 
 
