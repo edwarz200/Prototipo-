@@ -1,0 +1,58 @@
+/* General */
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+}
+.cpindex{
+    background-color: #333;
+}
+div{
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+}
+
+
+ img{
+    position: relative;
+    top: 200px;
+    left:200px;
+    height: 200px;
+    width: 400px;
+    filter: blur(0px);
+    transition: flur .3s;
+    transform: translateX(0px);
+    float: left;
+}
+a{
+    color: black;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+/* diseño slidebar */
+.imgs{
+    transform: translateX(0px);
+    transition: transform .50s;
+}
+.deslizar{
+    left:0px;
+    visibility: hidden;
+}
+.traer{
+    transform: translateX(100px);
+    visibility: visible;
+}
+.enviaralfinal{
+    transform: translateX(-1145px);
+    visibility: hidden;
+}

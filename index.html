@@ -2,29 +2,23 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <meta charset="UTF-8">
     <title>Pagina de inicio</title>
 </head>
 
 <body>    
-<nav class="containermenu">
-    <section class="logo">
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <img src="">
-        <p>BHD</p>
-    </section>
-    <section class="menu">
-        <ul>
-            <li><a href="" class="active"> __ <section></section></a></li>
-        </ul>
-    </section>
-    </nav>
+    <div>
+        <nav class="menu">
+            <a href="index.html" title="Click aquí para ir al inicio">
+                <li><img src="assets/logo0000.png" alt=""></li>
+                <p>BHD</p>
+            </a>
+        </nav>
+    </div>
 
-    <div class="cpindex">
-        <nav>
+    <div class="cpindex">  
+        <nav class="sd">
             <h2>Categorias</h2>
             <ul>
                 <li><a href="pages/Accion.html"><img src="assets/Accion/action.png" alt="">Acción</a></li>
@@ -37,24 +31,34 @@
         </nav>
         <section id="section2">
             <article>
-                <ul>
-                <li><img src="assets/imagendeprueba.jpg" alt=""></li>
-                <li><img src="assets/terror.png" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
+                <ul id="ntp">
+                    <li class="imags1"><img src="assets/imagendeprueba.jpg" alt=""></li>
+                    <li class="imags2"><img src="assets/deadpool2_poster grande.jpg"alt=""></li>
+                    <li class="imags3"><img src="assets/bajolamismaestrella_poster_ancho.jpg" alt=""></li>
+                    <img src="assets/mano.png" class="mano">
                 </ul>
                 <section>
                     <ul>
-                        <a href="">o</a>
-                        <a href="">o</a>
-                        <a href="">o</a>
+                        <div class="bts1" >o</div>
+                        <div class="bts2" >o</div>
+                        <div class="bts3" >o</div>
                     </ul>
-                    <ul>
+                    <ul class="des des1" >
                         <a href="pages/Ficcion/GuardianesDLG_vol2.html"><h1>Guardianes de la galaxia Vol.2</h1></a>
                         <li><a href="pages/Accion.html">Acción</a></li>
                         <li><a href="pages/Ficcion.html">Ciencia ficción</a></li>
-                        <li><p>2014</p></li>
+                        <li><p>2017</p></li>
+                    </ul>
+                    <ul class="des des2">
+                        <a href="pages/Comedia/Deadpool2.html"><h1>Deadpool 2</h1></a>
+                        <li><a href="pages/Comedia.html">Comedia</a></li>
+                        <li><a href="pages/Accion.html">Acción</a></li>
+                        <li><p>2018</p></li>
+                    </ul>
+                    <ul class="des des3">
+                        <a href="pages/Drama/Bajo_la_misma_estrella.html"><h1>Bajo la misma estrella</h1></a>
+                        <li><a href="pages/Drama.html">Drama</a></li>
+                        <li><p>2018</p></li>
                     </ul>
                 </section>
             </article>
@@ -313,10 +317,9 @@
                 </li>
             </ul>
         </section>                                                 
-        <footer>
-
-        </footer>
+        <script src="abrir.js"></script>
     </div>
+
 </body>
 
 </html>
