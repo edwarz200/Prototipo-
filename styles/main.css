@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Titan+One');
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 *{
     margin: 0;
     padding: 0;
@@ -10,16 +11,19 @@
 a{
     text-decoration: none;
 }
+ul {
+    list-style: none;
+}
 .cpindex{
     background-color: #333;
 }
 div{
     overflow: hidden;
 }
-ul {
-    list-style: none;
+#ba{
+        background-color: #eee;
 }
-/* Barra con logo para ir al inicio */
+/* Boton de menú */
 .menu{
     position: relative;
     left: 201px;
@@ -66,44 +70,82 @@ ul {
 .sd{
     top: 0;
     position: absolute;
-    height: 637px;
+    height: 100%;
     width: 200px;
     color: #fff;
     background-color: #333;
     outline: solid 1px #2a2a2a;
-}.cpindex nav{
+    overflow: hidden;
+}
+.sdc{
+    transform: translateX(-250px);
+    transition: transform .33s 0s;
+}
+.sdmovido{
+    transform: translateX(0px);
+}
+.cpindex nav{
     position: fixed;
 }
 .sd h2{
     padding: 20px;
     background: #2a2a2a;
     text-align: center;
+    cursor: default;
+}
+.sd li:nth-child(1),.sd li:nth-child(2),.ulcerrado li,.act{
+    border-left: 0px solid #eee;
 }
 .sd li{
-    background: #333;
-    outline: solid 1px #2a2a2a;
+    border-bottom: solid 1px #2a2a2a;
     transition-property: border-left;
     transition-duration: 0.3s;
 }
 .sd li:hover{
-    background-color: #2a2a2a;
+    background: #2a2a2a;
     border-left: 5px solid #eee;
 }
 .sd a{
     padding: 12px;
     color: #fff;
+    font-size: 17px;
     text-decoration: none;
     display: block;
+}
+.sd li:nth-child(3) a{
+    cursor: pointer;
 }
 .sd img{
     margin-right:40px;
     width: 30px;
     height: 30px;
 }
-/* contenido */
+.ulcerrado{
+    margin-left: 10px;
+    height: 0px;
+    width: 0px;
+    transition-property: height, border-bottom;
+    transition-delay: 0s;
+    transition-duration: .25s,.1s;
+    overflow: hidden;
+}
+.ulabierto{
+    height: 350px;
+    width: 200px;
+    border-top: solid 2px #00a4c1;
+    transition-property: height, border-bottom;
+    transition-delay: 0s;
+    transition-duration: .25s,.1s;
+}
+.activ{
+    background: #2a2a2a;
+    border-left: 5px solid #eee;
+}
+/* Contenido con el menu desplegable */
 .contenido{
     position: absolute;
     width: 100%;
+    height: 90%;
     background: #eee;
     padding: 10px;
     box-sizing: border-box;
@@ -116,7 +158,7 @@ ul {
     cursor: pointer;
 }
 .abrir{
-    transform: translateX(200px);
+    transform: translateX(201px);
 }
 .h2{
     color: rgba(255, 255, 255, 0);
@@ -125,13 +167,14 @@ ul {
 .most{
     color: rgba(255, 255, 255, 1);
 }
-/* diseño slidebar */
+/* Funciones de los slider */
 #ntp{
     width: 6000px;
     float: left;
 }
 .imags1{
     position: relative;
+    top: 220px;
     transform: translate(0px);
     transition: transform 0.5s 0s;
     visibility: visible;
@@ -142,6 +185,7 @@ ul {
 }
 .imags2{
     position: relative;
+    top: 240px;
     transform: translate(0px);
     transition: transform 0.5s 0s;
 }
@@ -151,6 +195,7 @@ ul {
 }
 .imags3{
     position: relative;
+    top: 210px;
     transform: translate(0px);
     transition: transform 0.5s 0s;
 }
@@ -176,13 +221,13 @@ ul {
 }
 .mano{
     position: absolute;
-    top: 200px;
+    top: 210px;
     left: 10px;
     width: 50px;
     height: 50px;
     visibility: hidden;
 }
-.mana{  
+.mana{
     visibility: visible;
 }
 /* Contenido pagina */
@@ -191,35 +236,35 @@ ul {
     top: 3px;
     left: 203px;
 }
-#sectionA{
+.sectionA article{
     position: absolute;
-    top: 50px;
+    top: 40px;
     left: 0;
-    right: 0;
+    right: 100px;
     margin: auto;
     transition: margin .35s 0s;
 }
-#section2,#sectionA{
+#section2,.sectionA article{
     width: 1145px;
-    height: 250px;
+    height: 261px;
     border-bottom-right-radius: 20px;
     overflow: hidden;
 }
-#section2 article section, #sectionA article section{
+#section2 article section{
+    width: 1145px;    
+}
+#section2 article section, .sectionA article section{
     position: absolute;
     top: 0;
-    width: 1145px;
     height: 100%;
     background-color: rgba(51, 51, 51, .3);
     transition: background-color .5s;
     overflow: hidden;
 }
-#section2:hover article section, #sectionA:hover article section{
+#section2:hover article section, .sectionA article section:hover{
     background-color: rgba(51, 51, 51, .7);
 }
-#section2 article ul:nth-child(1) li img, #sectionA article ul:nth-child(1) li img{
-    position: relative;
-    top: 210px;
+#section2 article ul:nth-child(1) li img, .sectionA article ul:nth-child(1) li img{
     height: 300px;
     width: 1145px;
     filter: blur(0px);
@@ -227,10 +272,10 @@ ul {
     transform: translateY(-250px);
     float: left;
 }
-#section2:hover article ul:nth-child(1) li img, #sectionA:hover article ul:nth-child(1) li img{
+#section2:hover article ul:nth-child(1) li img, .sectionA article:hover ul:nth-child(1) li img{
     filter: blur(1.5px);
 }
- #section2 article section ul:nth-child(1), #sectionA article section ul:nth-child(1){
+ #section2 article section ul:nth-child(1), .sectionA article section ul:nth-child(1){
     position: absolute;
     bottom: 0;
     right: 0;
@@ -240,10 +285,10 @@ ul {
     border-top-left-radius: 30px;
     transition: background-color .3s;
 }
-#section2:hover article section ul:nth-child(1), #sectionA:hover article section ul:nth-child(1){
+#section2:hover article section ul:nth-child(1), .sectionA:hover article section ul:nth-child(1){
     background-color: rgb(28, 174, 231,1);    
 }
-#section2 article section ul:nth-child(1) div, #sectionA article section ul:nth-child(1) div{
+#section2 article section ul:nth-child(1) div, .sectionA article section ul:nth-child(1) div{
     margin-left: 20px;
     color: white;
     font-size: 24px;
@@ -262,9 +307,9 @@ ul {
 #section2:hover article section ul:nth-child(2),
 #section2:hover article section ul:nth-child(3),
 #section2:hover article section ul:nth-child(4),
-#sectionA:hover article section ul:nth-child(2),
-#sectionA:hover article section ul:nth-child(3),
-#sectionA:hover article section ul:nth-child(4){
+.sectionA:hover article section ul:nth-child(2),
+.sectionA:hover article section ul:nth-child(3),
+.sectionA:hover article section ul:nth-child(4){
     background-color: rgb(58, 58, 58);
 }
 .des h1, .des p,.des a{
@@ -278,9 +323,9 @@ ul {
 #section2:hover article section ul:nth-child(2) h1,
 #section2:hover article section ul:nth-child(3) h1,
 #section2:hover article section ul:nth-child(4) h1,
-#sectionA :hover article section ul:nth-child(2) h1,
-#sectionA :hover article section ul:nth-child(3) h1,
-#sectionA :hover article section ul:nth-child(4) h1{
+.sectionA :hover article section ul:nth-child(2) h1,
+.sectionA :hover article section ul:nth-child(3) h1,
+.sectionA :hover article section ul:nth-child(4) h1{
     border-bottom: solid 1px rgb(34, 34, 34);
 }
 .des li{
@@ -298,59 +343,54 @@ ul {
 .des li:nth-child(4) a{
     margin-left: 40px;
 }
+/* El s3 */
 .cpindex .s3{
     position: relative;
     top: 6px;
     left: 201px;
-    height: 291px;
+    margin-bottom: 30px;
+    height: 300px;
     width: 1140px;
-}
-.cpindex .s3 #su{
-    color: #319AA9;
-    margin-left: 20px;
-    font-size: 17px;
-    font-family: 'Titan One', cursive;
 }
 .cpindex .s3 ul{
     position: absolute;
     top: 0px;
-    left: 130px;
+    left: 90px;
     height: 200px;
     width: 800px;
 }
 .cpindex .s3 ul li{
     position: absolute;
-    top: 20px;     
-    width: 200px;
-    height: 260px;
+    top: 20px;
+    width: 215px;
+    height: 280px;
     overflow: hidden;
 }
 .cpindex .s3 ul li:hover{
-    width: 300px;
+    width: 335px;
 }
 .cpindex .s3 ul li:nth-child(2) {
-    left: 700px;
+    left: 360px;
 }
 .cpindex .s3 ul li:nth-child(3) {
-    left: 350px;
+    left: 720px;
 }
 .cpindex .s3 ul li .a{
-    width: 200px;
-    height: 260px;
-    border-radius: 2px;
+    width: 215px;
+    height: 280px;
     background-color: #319AA9;
     transition: .5s;
     border-radius: 4px;
     display: inline-block;
 }
 .cpindex .s3 ul li:hover .a{
-    width: 300px;
-    height: 200px;
+    width: 335px;
+    height: 240px;
     background-color: rgba(94, 94, 94,.5);
 }
 .cpindex .s3 ul li a img{
     position: absolute;
-    width: 200px;
+    width: 215px;
     height: 200px;
     border-radius: 4px;
     transition: .5s;
@@ -365,8 +405,8 @@ ul {
     top: 200px;
     left: 0;
     margin: 10px;
-    width: 170px;
-    font-size: 14px;
+    width: 200px;
+    font-size: 15px;
     font-family: 'Alegreya Sans', sans-serif;
     color: #cfd0d6;
     border-bottom: solid 1.3px #1e6de4;
@@ -377,7 +417,7 @@ ul {
 .cpindex .s3 ul li:hover a h1{
     top: 10px;
     left: 150px;
-    width: 130px;
+    width: 165px;
     animation-name: animacion;
     animation-duration: .3s;
     animation-iteration-count: 1;
@@ -386,14 +426,14 @@ ul {
     animation-direction: normal;
 }
 .cpindex .s3 ul li:nth-child(1):hover a h1{
-    font-size: 12px;
+    font-size: 14px;
 }
 .cpindex .s3 ul li p:nth-child(4){
     position: absolute;
     top: 0;
     left: 0;
     padding: 0px 85px;
-    font-size: 12px;
+    font-size: 15px;
     color: rgba(207, 208, 214, 0);
     font-family: 'Alegreya Sans', sans-serif;
     transform: translate(200px,45px);
@@ -413,16 +453,16 @@ ul {
     animation-direction: normal;
 }
 .cpindex section:nth-child(10) ul li:nth-child(3)  p:nth-child(4){
-    transform: translate(200px,60px);
+    transform: translate(200px,65px);
 }
 .cpindex section:nth-child(10) ul li:nth-child(3):hover  p:nth-child(4){
-    transform: translate(80px,60px);
+    transform: translate(80px,65px);
 }
  .cpindex section:nth-child(3) ul li:nth-child(1):hover  p:nth-child(4){
-    transform: translate(200px,52px);
+    transform: translate(200px,45px);
 }
  .cpindex section:nth-child(3) ul li:nth-child(1):hover  p:nth-child(4){
-    transform: translate(80px,52px);
+    transform: translate(80px,45px);
 }
 
 .cpindex .s3 ul li p:nth-child(3){
@@ -434,18 +474,245 @@ ul {
     animation: animacion .35s 1 linear 0s normal;
 }
 .cpindex .s3 ul li:hover p:nth-child(3){
-    top: 155px;
-    left: 5px;
-    font-size: 10px;
+    top: 160px;
+    left: 10px;
+    font-size: 14px;
     animation: animacion2 .32s 1 linear 0s normal;
 }
-/* Pagina de accion */
-.contenido2,.redu{
+/* Pagina de accion, ficcion, comdia etc */
+.cdiv{
+    position: relative;
+    top: 240px;
+    left: 16px;
+    width: 100%;
+    height: 100%;
+}
+.cdiv2{
+    left: 0px;
+}
+.sectionA{
+    position: absolute;
+    top: 0;
+    left: 70px;
+    width: 100%;
+    height: 304px;
+}
+.contenido2,.ss2{
     width: 85%;
 }
-.c{
+.contenido h1:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 13%;
+    margin: auto;
+    width: 100px;
+    font-family: 'Indie Flower', cursive;
+}
+.ss2 article, ul:nth-child(1) li img,.section_2{
+    width: 100%;
+}
+.cdiv section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 51%;
+    right: 0;
+    margin: auto;
+    width: 1049px;
+    height: 253px;
+    overflow: hidden;
+}
+.mover{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 250px;
+    width: 1000px;
+    transform: translateX(0);
+    transition-property: left, transform;
+    transition-duration: .35s,.35s;
+    transition-delay: 0s;
+}
+.cdiv section ul li{
+    position: absolute;
+    width: 215px;
+    height: 250px;
+    border-radius: 5px;
+    float: left;
+    overflow: hidden;
+}
+.cdiv section ul li:nth-child(2){
+    top: 0;
+    left: 0;
+}
+.cdiv section ul li:nth-child(3){
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 260px;
+    margin: 0 auto;
+}
+.cdiv section ul li:nth-child(4){
+    top: 0px;
+    left: 260px;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.cdiv section ul li:nth-child(5){
+    top: 0;
+    right: 0;
+}
+.cdiv section ul li img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90%;
+}
+.bt{
+    position: absolute;
+    top: 0px;
+    width: 40px;
+    height: 250px;
+    transition: background-color .15s 0s;
+    background-color: #e3e3e3;
+    cursor: pointer;
+}
+.bt:hover{
+    background-color: rgba(55, 208, 255, 0.6);
+}
+.btback{
+    left: 0;
+    bottom: 51%;
+    right: 1100px;
+    margin: auto;
+}
+.btnext{
+    left: 1100px;
+    bottom: 51%;
+    right: 0;
+    margin: auto;
+}
+.bt img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    width: 40px;
+    height: 60px;
+}
+.moverback{
+    left: 185px;
+}
+.movernext{
+    transform: translateX(-160px);
+}
+.mover li:first-child p, .mover li:last-child p{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 12;
+}
+.mover li:first-child{
+    transform: translateX(-215px);
+    background-color: #eee;
+}
+.mover li:last-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(215px);
+    background-color: #eee;
+}
+.mover li article{
+    position: absolute;
+    top: 0;
+    width: 215px;
+    height: 250px;
+    background-color: rgba(55, 55, 55, 0.6);
+    transform: scale(0);
+    transition: transform .35s 0s;
+}
+.mover li:hover article{
+    transform: scale(1);
+}
+.mover li article p, .mover li article h2{
+    color: rgb(255, 255, 255);
+}
+.mover li a img:nth-child(1){
+    transition-property: transform,opacity;
+    transition-duration: .35s,.25s;
+    transition-delay: 0s,.15s;
+    transform: scale(1);
+    opacity: 1;
+}
+.mover li:hover a img:nth-child(1){
+    transform: scale(1.5);
+    opacity: 0;
+}
+.mover li a img:nth-child(3){
+    height: 100%;
+    transition-property: transform,opacity;
+    transition-duration: .35s,.15s;
+    transition-delay: 0s,.25s;
+    transform: scale(0);
+    opacity: 0;
+}
+.mover li:hover a img:nth-child(3){
+    transform: scale(1);
+    opacity: 1;
+}
+.mover li article p{
     position: relative;
-    top: 230px;
+    top: 0px;
+    margin: 19px 0px 0px 16px;
+    padding: 0 5px;
+    font-size: 14px;
+}
+.mover li a h2:nth-child(2){
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    font-size: 14px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-bottom: solid 3px rgb(0, 200, 255);
+    transition: transform .35s 0s;
+    transform: translateY(0px);
+}
+.mover li:hover a h2:nth-child(2){
+    transform: translateY(30px);    
+}
+.mover li a article h2{
+    position: relative;
+    margin: 20px 0px 0px 0px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-bottom: solid 1px white;
+}
+
+
+
+
+
+
+
+
+@keyframes animacion2{
+   100%{
+       visibility: hidden;
+   }
+   0%{
+      visibility: hidden;
+  }
 }
 
  @keyframes animacion{

@@ -1,34 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="../styles/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Comedia</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
-<body>
-            <div class="menu" id="anulador" >
-                <nav>
-                    <a href="../index.html" title="Click aquí para ir al inicio">
-                    <li><img src="../assets/logo00020000.png" alt=""></li>
-                    <p>BHD</p>
-                    </a>
-                </nav>
-            </div>
-        <div class="sidebar">
-            <nav>
-                <h2>Categorias</h2>
-                <ul>
-                    <li><a href="pages/Accion.html"><img src="assets/Accion/action.png" alt="">Acción</a></li>
-                    <li><a href="pages/Comedia.html"><img src="assets/Comedia/comedy2.png" alt="">Comedía</a></li>
-                    <li><a href="pages/Ficcion.html"><img src="assets/Ficcion/ficcion.png" alt="">Ficción</a></li>
-                    <li><a href="pages/Terror.html"><img src="assets/Terror/terror.png" alt="">Terror</a></li>
-                    <li><a href="pages/Suspenso.html"><img src="assets/Suspenso/suspenso" alt="">Suspenso</a></li>
-                    <li><a href="pages/Drama.html"><img src="assets/Drama/drama.png" alt="">Drama</a></li>
-                </ul>
-            </nav>
-        </div>
 
+<body id="ba">
+    <div class="menu" id="anulador">
+        <nav>
+            <a href="../index.html" title="Click aquí para ir al inicio">
+                <li><img src="../assets/logos/logo0000.png" alt=""></li>
+                <p>BHD</p>
+            </a>
+        </nav>
+    </div>
+
+    <div>
+        <nav class="sd sdmovido">
+            <h2 class="h2 most">Menú</h2>
+            <ul>
+                <li>
+                    <a href="../index.html">
+                    <img src="../assets/icons/inicio.png" alt="">Inicio</a>
+                </li>
+                <li>
+                    <a href="">
+                    <img src="../assets/icons/corazon.png" alt="">Favoritas</a>
+                </li>
+                <li class="abrirul act">
+                    <a>
+                    <img src="../assets/icons/carpeta.png" alt="">Categorias</a>
+                </li>
+            </ul>
+            <ul class="ulcerrado">
+                <li>
+                    <a href="../pages/Accion.html">
+                    <img src="../assets/icons/action.png" alt="">Acción</a>
+                </li>
+                <li>
+                    <a href="../pages/Comedia.html">
+                    <img src="../assets/icons/comedy2.png" alt="">Comedía</a>
+                </li>
+                <li>
+                    <a href="../pages/Ficcion.html">
+                    <img src="../assets/icons/ficcion.png" alt="">Ficción</a>
+                </li>
+                <li>
+                    <a href="../pages/Terror.html">
+                    <img src="../assets/icons/terror.png" alt="">Terror</a>
+                </li>
+                <li>
+                    <a href="../pages/Suspenso.html">
+                    <img src="../assets/icons/suspenso" alt="">Suspenso</a>
+                </li>
+                <li>
+                    <a href="../pages/Drama.html">
+                    <img src="../assets/icons/drama.png" alt="">Drama</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contenido abrir contenido2">
+            <img src="../assets/icons/menu-icon.png" class="menu-bar" title="Click para desplegar menú categorias">
+            <h1>Comedia</h1>
+            <section class="sectionA ss2">
+                <article>
+                    <ul id="ntp">
+                        <li class="imags2"><img src="../assets/poster_anchos/ted_poster_ancho.jpg" alt=""></li>
+                        <li class="imags1"><img src="../assets/poster_anchos/kick_ass_poster_ancho2.jpg" alt=""></li>
+                        <li class="imags3"><img src="../assets/poster_anchos/gdlg_vol2_poster_ancho2.jpg" alt=""></li>
+                        <img src="../assets/icons/mano.png" class="mano">
+                    </ul>
+                    <section class="section_2">
+                        <ul>
+                            <div class="bts1">o</div>
+                            <div class="bts2">o</div>
+                            <div class="bts3">o</div>
+                        </ul>
+                        <ul class="des des1">
+                            <a href="../pages/Comedia/ted.html">
+                                <h1>Ted</h1>
+                            </a>
+                            <li><a href="../pages/Comedia.html">Comedia</a></li>
+                            <li><p>2012</p></li>
+                        </ul>
+                        <ul class="des des2">
+                            <a href="../pages/Comedia/kick_ass.html">
+                                <h1>Kick ass</h1>
+                            </a>
+                            <li><a href="../pages/Ficcion.html">Comedia</a></li>
+                            <li><a href="../pages/Accion.html">Acción</a></li>
+                            <li><p>2010</p></li>
+                            </ul>
+                        <ul class="des des3">
+                            <a href="../pages/Ficcion/GuardianesDLG_vol2.html">
+                                <h1>Guardianes de la galaxia Vol.2</h1>
+                            </a>
+                            <li><a href="../pages/Comedia.html">Comedia</a></li>
+                            <li><a href="../pages/Ficcion.html">Ciencia ficción</a></li>
+                            <li><p>2017</p></li>
+                        </ul>
+                    </section>
+                </article>
+            </section>
+            <div class="cdiv cdiv2">
+                <div class="bt btback"><img src="../assets/icons/back.png"></div>
+                <section>
+                    <ul class="mover">
+                        <li><p>Más muy pronto...</p></li>
+                        <li>
+                                <a href="../pages/Comedia/kick_ass.html" class="a">
+                                    <img src="../assets/Comedia/kick_ass.jpeg">
+                                    <h2>Kick Ass</h2>
+                                    <img src="../assets/Comedia/poster2_kick_ass.jpg" alt="">
+                                    <article>
+                                            <h2>Kick Ass</h2>
+                                            <p>A pesar de la falta completa de poderes extraordinarios, un adolescente se reinventa a sí mismo 
+                                                como un superhéroe y, junto con un equipo padre/hija de vigilantes, se enfrentan a un jefe criminal.</p>
+                                            <p>2010</p>
+                                    </article>
+                                </a>    
+                        </li>	
+                        <li>
+                            <a href="../pages/Comedia/Deadpool2.html" class="a">
+                                <img src="../assets/Comedia/deadpool2.jpg">
+                                <h2>Deadpool 2</h2>
+                                <img src="../assets/Comedia/poster2_deadpool_2.jpeg" alt="">
+                                <article>
+                                    <h2>Deadpool 2</h2>
+                                    <p>Después de sobrevivir a un ataque bovino casi mortal, un chef desfigurado de cafetería (Wade Wilson) lucha por cumplir 
+                                            su sueño de convertirse en el barman más caliente de Mayberry mientras aprende a lidiar con su perdido sentido del gusto...</p>
+                                    <p>2018</p>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/Comedia/Scary_movie_5.html" class="a">
+                                <img src="../assets/Comedia/scary_movie5.jpg">
+                                <h2>Scary movie 5</h2>
+                                <img src="../assets/Comedia/poater2_scary_movie_5.jpg" alt="">
+                                <article>
+                                        <h2>Scary movie 5</h2>
+                                    <p>Actividades extrañas se presentan luego que un marido y su esposa llevan a su bebe recién nacido a casa. 
+                                            Ellos descubren que un demonio nefasto acecha a su familia, consultan a expertos e instalan numerosas cámaras 
+                                            para deshacerse del espíritu.</p>                
+                                    <p>2013</p>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/Comedia/ted.html" class="a">
+                                <img src="../assets/Comedia/ted.jpg">
+                                <h2>Ted</h2>
+                                <img src="../assets/Comedia/poster2_ted.jpg" alt="">
+                                <article>
+                                    <h2>Ted</h2>
+                                    <p>Cuando John Bennett (Mark Wahlberg) era un niño pequeño, pidió el deseo de que Ted (Seth MacFarlane), su 
+                                        querido oso de peluche, cobrara vida. Treinta años más tarde, Ted continúa siendo el compañero de John, 
+                                        ante el disgusto de Lori...</p>
+                                    <p>2012</p>
+                                </article>
+                            </a>
+                        </li>
+                        <li><p>Más muy pronto...</p></li>
+                    </ul>
+                </section>
+                <div class="bt btnext"><img src="../assets/icons/next.png"></div>
+            </div>
+        </div>
+        <script src="../abrir.js"></script>
 </body>
+
 </html>
