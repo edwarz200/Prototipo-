@@ -271,3 +271,15 @@ $('.desocultar').on('click', function () {
     $('.ocultar').toggleClass('visible');
     $('.desocultar').toggleClass('ocultar');
 });
+
+// verpeli
+
+$('.verpeli').on('click', function () {
+    $('.cpreprovideo').toggleClass('visible2');
+    $('.contenidop').toggleClass('ocultar2');
+});
+
+$('.cerrarpeli').on('click', function () {
+    $('.cpreprovideo').toggleClass('visible2');
+    $('.contenidop').toggleClass('ocultar2');
+});
