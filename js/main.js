@@ -3,6 +3,7 @@ $('.menu-bar').on('click', function () {
     $('.h2').toggleClass('most');
     $('.sectionA').toggleClass('ss2');
     $('.contenido').toggleClass('contenido2');
+    $('.contenidop').toggleClass('contenido2');
     $('.cdiv').toggleClass('cdiv2');
     $('.sdc').toggleClass('sdmovido');
 });
@@ -236,7 +237,7 @@ $('.bts3').on('click', function () {
 });
 
 
-// Funciones de botones
+// Funciones de botones slider 2
 btnumero = 0;
 
 $('.btback').on('click', function () {
@@ -262,4 +263,11 @@ $('.btnext').on('click', function () {
         setTimeout(moverb, 1500);
         btnumero = 1;
     }
+});
+
+// Funciones de botones reproducir
+
+$('.desocultar').on('click', function () {
+    $('.ocultar').toggleClass('visible');
+    $('.desocultar').toggleClass('ocultar');
 });
