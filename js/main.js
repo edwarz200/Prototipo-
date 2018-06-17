@@ -1,11 +1,27 @@
+
 $('.menu-bar').on('click', function () {
-    $('.contenido').toggleClass('abrir');
+    if (numabr==0) {
+        $('.contenido').toggleClass('abrir');
     $('.h2').toggleClass('most');
     $('.sectionA').toggleClass('ss2');
     $('.contenido').toggleClass('contenido2');
     $('.contenidop').toggleClass('contenido2');
+    $('.aparecer').toggleClass('abriraparecer');
     $('.cdiv').toggleClass('cdiv2');
     $('.sdc').toggleClass('sdmovido');
+    numabr =1;
+    } else if(numabr==1)  {
+        $('.contenido').toggleClass('abrir');
+    $('.h2').toggleClass('most');
+    $('.sectionA').toggleClass('ss2');
+    $('.contenido').toggleClass('contenido2');
+    $('.contenidop').toggleClass('contenido2');
+    $('.aparecer').toggleClass('abriraparecer');
+    $('.cdiv').toggleClass('cdiv2');
+    $('.sdc').toggleClass('sdmovido');
+    numabr = 0;    
+    }
+    
 });
 //Funciones del sidebar
 $('.abrirul').on('click', function () {
@@ -19,6 +35,7 @@ $('.abrirul').on('click', function () {
 var num1 = 0;
 var num2 = 0;
 var num3 = 0;
+var numabr = 0;
 var numero = 2;
 var contador = 0;
 var psto, ejecutar;
@@ -26,6 +43,10 @@ var psto, ejecutar;
 // automatico
 
 (function () {
+    var esconder =function() {
+        $('.aparecer').toggleClass('ans');        
+    }
+    setTimeout(esconder,7000);
 
     pruebaslider = function () {
         if (num1 == 1) {
@@ -275,11 +296,26 @@ $('.desocultar').on('click', function () {
 // verpeli
 
 $('.verpeli').on('click', function () {
-    $('.cpreprovideo').toggleClass('visible2');
-    $('.contenidop').toggleClass('ocultar2');
+
+    if (numabr==1) {
+        $('.contenido').toggleClass('abrir');
+        $('.h2').toggleClass('most');
+        $('.sectionA').toggleClass('ss2');
+        $('.contenido').toggleClass('contenido2');
+        $('.contenidop').toggleClass('contenido2');
+        $('.aparecer').toggleClass('abriraparecer');
+        $('.cdiv').toggleClass('cdiv2');
+        $('.sdc').toggleClass('sdmovido');
+        $('.menu-bar').toggleClass('ocultar2');
+        $('.cpreprovideo').toggleClass('visible2');
+        $('.contenidop').toggleClass('ocultar2');
+        numabr=0;
+    } else {
+        $('.cpreprovideo').toggleClass('visible2');
+        $('.contenidop').toggleClass('ocultar2');
+        $('.menu-bar').toggleClass('ocultar2');
+    }
+
 });
 
-$('.cerrarpeli').on('click', function () {
-    $('.cpreprovideo').toggleClass('visible2');
-    $('.contenidop').toggleClass('ocultar2');
-});
+
