@@ -1,4 +1,15 @@
+// Variables
+var num1 = 0;
+var num2 = 0;
+var num3 = 0;
+var numabr = 0;
+var numero = 2;
+var contador = 0;
+var psto, ejecutar;
 
+
+
+// Funciones del sidebar
 $('.menu-bar').on('click', function () {
     if (numabr==0) {
         $('.contenido').toggleClass('abrir');
@@ -23,22 +34,12 @@ $('.menu-bar').on('click', function () {
     }
     
 });
-//Funciones del sidebar
+//Funciones del slider
 $('.abrirul').on('click', function () {
     $('.ulcerrado').toggleClass('ulabierto');
     $('.abrirul').toggleClass('act');
     $('.abrirul').toggleClass('activ');
 });
-
-// Funciones del slider
-
-var num1 = 0;
-var num2 = 0;
-var num3 = 0;
-var numabr = 0;
-var numero = 2;
-var contador = 0;
-var psto, ejecutar;
 
 // automatico
 
@@ -46,7 +47,7 @@ var psto, ejecutar;
     var esconder =function() {
         $('.aparecer').toggleClass('ans');        
     }
-    setTimeout(esconder,7000);
+    setTimeout(esconder,5000);
 
     pruebaslider = function () {
         if (num1 == 1) {
@@ -306,14 +307,14 @@ $('.verpeli').on('click', function () {
         $('.aparecer').toggleClass('abriraparecer');
         $('.cdiv').toggleClass('cdiv2');
         $('.sdc').toggleClass('sdmovido');
-        $('.menu-bar').toggleClass('ocultar2');
         $('.cpreprovideo').toggleClass('visible2');
         $('.contenidop').toggleClass('ocultar2');
+        $('.menu-bar').toggleClass('ocultar3');
         numabr=0;
     } else {
         $('.cpreprovideo').toggleClass('visible2');
         $('.contenidop').toggleClass('ocultar2');
-        $('.menu-bar').toggleClass('ocultar2');
+        $('.menu-bar').toggleClass('ocultar3');
     }
 
 });
