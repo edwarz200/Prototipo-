@@ -343,27 +343,24 @@ div{
 .cpindex .s3{
     position: relative;
     top: 6px;
-    left: 201px;
+    left: 180px;
     margin-bottom: 30px;
-    height: 300px;
+    height: 400px;
     width: 1140px;
 }
 .cpindex .s3 ul{
     position: absolute;
     top: 0px;
     left: 90px;
-    height: 200px;
+    height: 600px;
     width: 800px;
 }
 .cpindex .s3 ul li{
     position: absolute;
     top: 20px;
-    width: 215px;
-    height: 280px;
+    width: 275px;
+    height: 342px;
     overflow: hidden;
-}
-.cpindex .s3 ul li:hover{
-    width: 335px;
 }
 .cpindex .s3 ul li:nth-child(2) {
     left: 360px;
@@ -371,49 +368,44 @@ div{
 .cpindex .s3 ul li:nth-child(3) {
     left: 720px;
 }
-.cpindex .s3 ul li .a{
-    width: 215px;
-    height: 280px;
-    background-color: #319AA9;
-    transition: .5s;
+.cpindex .s3 ul li .a article{
+    position: absolute;
+    top: 290px;
+    width: 275px;
+    height: 342px;
     border-radius: 4px;
-    display: inline-block;
+    background-color: #319AA9;
+    transition-property: background-color, top;
+    transition-delay: .15s,0s;
+    transition-duration: .35s,.35s;
 }
-.cpindex .s3 ul li:hover .a{
-    width: 335px;
-    height: 240px;
-    background-color: rgba(94, 94, 94,.5);
+.cpindex .s3 ul li:hover .a article{
+    background-color: rgba(94, 94, 94, 0.72);
+    top: 0px;
 }
 .cpindex .s3 ul li a img{
     position: absolute;
-    width: 215px;
-    height: 200px;
+    width: 275px;
+    height: 342px;    
     border-radius: 4px;
-    transition: .5s;
-}
-.cpindex .s3 ul li:hover a img{
-    width: 150px;
-    height: 150px;
-    opacity: .75;
 }
 .cpindex .s3 ul li a h1{
     position: relative;
-    top: 200px;
+    top: 0px;
     left: 0;
     margin: 10px;
-    width: 200px;
-    font-size: 15px;
+    width: 250px;
+    font-size: 18px;
     font-family: 'Alegreya Sans', sans-serif;
     color: #cfd0d6;
-    border-bottom: solid 1.3px #1e6de4;
+    border-bottom: solid 1.3px #151515;
     transition-property: top, left;
     transition-duration: 0s, .5s;
     animation: animacion2 .3s 1 linear 0s normal;
 }
-.cpindex .s3 ul li:hover a h1{
+.cpindex .s3 ul li:hover a article h1{
     top: 10px;
-    left: 150px;
-    width: 165px;
+    border-bottom: solid 1.3px #1e6de4;
     animation-name: animacion;
     animation-duration: .3s;
     animation-iteration-count: 1;
@@ -421,25 +413,20 @@ div{
     animation-delay:0s;
     animation-direction: normal;
 }
-.cpindex .s3 ul li:nth-child(1):hover a h1{
-    font-size: 14px;
-}
-.cpindex .s3 ul li p:nth-child(4){
-    position: absolute;
+.cpindex .s3 ul li article p:nth-child(3){
+    position: relative;
     top: 0;
     left: 0;
-    padding: 0px 85px;
-    font-size: 15px;
+    padding: 0px 13px;
+    font-size: 18px;
     color: rgba(207, 208, 214, 0);
     font-family: 'Alegreya Sans', sans-serif;
-    transform: translate(200px,45px);
     transition-property: color, transform;
     transition-delay: .1s;
     transition-duration:.45s,.45s;
     animation: animacion2 .3s 1 linear 0s normal;
 }
-.cpindex .s3 ul li:hover  p:nth-child(4){
-    transform: translate(80px,45px);
+.cpindex .s3 ul li:hover article p:nth-child(3){
     color: #cfd0d6;
     animation-name: animacion;
     animation-duration: .35s;
@@ -448,32 +435,14 @@ div{
     animation-delay:0s;
     animation-direction: normal;
 }
-.cpindex section:nth-child(10) ul li:nth-child(3)  p:nth-child(4){
-    transform: translate(200px,65px);
-}
-.cpindex section:nth-child(10) ul li:nth-child(3):hover  p:nth-child(4){
-    transform: translate(80px,65px);
-}
- .cpindex section:nth-child(3) ul li:nth-child(1):hover  p:nth-child(4){
-    transform: translate(200px,45px);
-}
- .cpindex section:nth-child(3) ul li:nth-child(1):hover  p:nth-child(4){
-    transform: translate(80px,45px);
-}
 
-.cpindex .s3 ul li p:nth-child(3){
-    position: absolute;
+.cpindex .s3 ul li p:nth-child(2){
+    position: relative;
     top: 237px;
     left: 12px;
     color: #eee;
-    font-size: 14px;
+    font-size: 20px;
     animation: animacion .35s 1 linear 0s normal;
-}
-.cpindex .s3 ul li:hover p:nth-child(3){
-    top: 160px;
-    left: 10px;
-    font-size: 14px;
-    animation: animacion2 .32s 1 linear 0s normal;
 }
 /* Pagina de accion, ficcion, comdia etc */
 .cdiv{
@@ -819,13 +788,13 @@ div{
 }
 .contenidop section:nth-child(3) h1{
     position: absolute;
-    left: 0;
+    left: 30px;
     margin: auto;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
     color: #3b494b;
     border-bottom: solid 2px rgb(0, 0, 0);
-    width: 500px;
+    width: 600px;
 }
 .contenidop section:nth-child(3) h1:nth-child(7){
     top: 380px;
