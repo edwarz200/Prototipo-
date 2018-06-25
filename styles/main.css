@@ -50,9 +50,9 @@ div{
     color: white;
 }
 #anulador{
-    position: relative;
+    position: fixed;
     left: 0px;
-    height: 63px;
+    height: 68px;
     width: 100%;
     background-color: #2a2a2a;    
 }
@@ -64,8 +64,8 @@ div{
 }
 /* diseño sidebar */
 .sd{
+    position: fixed;
     top: 0;
-    position: absolute;
     height: 100%;
     width: 200px;
     color: #fff;
@@ -140,10 +140,11 @@ div{
 /* Contenido con el menu desplegable */
 .contenido{
     position: absolute;
+    top: 68px;
     width: 100%;
     height: 90%;
     background: #eee;
-    padding: 10px;
+    padding: 10px 0px 10px 10px;
     box-sizing: border-box;
     transform: translateX(0px);
     transition: transform .35s;
@@ -734,6 +735,7 @@ div{
 /* contenido pagina principal de las peliculas */
 .contenidop{
     overflow: visible;
+    height: 1029px;
 }
 .contenidop section:nth-child(3){
     position: relative;
@@ -810,9 +812,10 @@ div{
 }
 .contenidop section:nth-child(3) ul:nth-child(5) li{
     position: relative;
-    top: 0;
+    top: 0px;
     height: 20px;
     display: inline-block;
+    transform: translate(-22px,-1px);
 }
 .contenidop section:nth-child(3) ul:nth-child(5) li a{
     position: relative;
@@ -823,13 +826,9 @@ div{
 .contenidop section:nth-child(3) ul:nth-child(5) li:hover a{
     background-color: rgb(255, 80, 27);
 }
-.contenidop section:nth-child(3) ul:nth-child(5) li:nth-child(2),.contenidop section:nth-child(3) ul:nth-child(5) li:nth-child(3){
-    transform: translate(-106px,50px);
-    margin-left: 15px
-}
 .contenido section:nth-child(3) p{
     position: absolute;
-    top: 210px;
+    top: 195px;
     left: 0;
     bottom: 0;
     right: 0;
